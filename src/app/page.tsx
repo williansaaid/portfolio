@@ -1,5 +1,6 @@
 import AnimatedText from "@/components/AnimatedText"
 import Button from "@/components/Button"
+import HireMe from "@/components/HireMe"
 import { LinkArrow } from "@/components/Icons"
 import Layout from "@/components/Layout"
 import Image from "next/image"
@@ -35,6 +36,8 @@ export default function Home() {
           </div>
         </div>
       </Layout>
+
+      <HireMe/>
     </main>
   )
 }
