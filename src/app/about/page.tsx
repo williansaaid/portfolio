@@ -1,5 +1,6 @@
 "use client"
 import AnimatedText from '@/components/AnimatedText'
+import Education from '@/components/Education'
 import Experience from '@/components/Experience'
 import Layout from '@/components/Layout'
 import Skills from '@/components/Skills'
@@ -42,7 +43,7 @@ const About = () => {
             <main className='flex w-dull flex-col items-center justify-center'>
                 <Layout className='pt-16'>
                     <AnimatedText
-                        text='Passion fuels purpose!'
+                        text='Passionate. Driven. Creative.'
                         className='text-6xl mb-16'
                     />
                     <div
@@ -55,13 +56,13 @@ const About = () => {
                                 More about me
                             </h2>
                             <p className='font-medium'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique reiciendis ullam tempora accusantium odio enim unde ad, saepe, molestias voluptates! Mollitia quae deleniti nostrum impedit! Laborum debitis autem eligendi.
+                                I'm a Full Stack Developer with a focus on front-end development. I have experience in PERN Stack, Typescript, React Native, MongoDB, and more. I bring creative thinking, problem-solving autonomy, and effective communication to boost individual and teamwork performance.
                             </p>
                             <p className='font-medium'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique reiciendis ullam tempora accusantium odio enim unde ad, saepe, molestias voluptates! Mollitia quae deleniti nostrum impedit! Laborum debitis autem eligendi.
+                                I have a broad range of skills in various technologies including Typescript, React, React Native, Next.js, Redux, Node.js, Express, PostgreSQL, MongoDB, and more. I'm also proficient in front-end styling with TailwindCSS and StyledComponents. My expertise covers both front-end and back-end development.
                             </p>
                             <p className='font-medium'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique reiciendis ullam tempora accusantium odio enim unde ad, saepe, molestias voluptates! Mollitia quae deleniti nostrum impedit! Laborum debitis autem eligendi.
+                                I follow an agile approach, particularly SCRUM, to manage projects efficiently. With my technical skills, problem-solving abilities, and passion for creating great user experiences, I strive to exceed expectations and contribute to project success.
                             </p>
                         </div>
                         <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'>
@@ -96,6 +97,7 @@ const About = () => {
 
                     <Skills />
                     <Experience />
+                    <Education />
                 </Layout>
             </main>
         </>
