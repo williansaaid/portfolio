@@ -36,7 +36,7 @@ const EducationDetails = ({ type, time, place, info }: Props) => {
                 >
                     {type}&nbsp;
                 </h3>
-                <span className='capitalize font-medium text-dark/75'>
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
                     {time} | {place}
                 </span>
                 <p className='font-medium w-full'>

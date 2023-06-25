@@ -40,7 +40,7 @@ const About = () => {
                 <title>About</title>
                 <meta name='description' content='More info about Willians Jimenez'/>
             </Head>
-            <main className='flex w-dull flex-col items-center justify-center'>
+            <main className='flex w-dull flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
                     <AnimatedText
                         text='Passionate. Driven. Creative.'
@@ -51,7 +51,7 @@ const About = () => {
                     >
                         <div className='col-span-3 flex flex-col items-start justify-start gap-2'>
                             <h2
-                                className='mb-4 text-lg font-bold uppercase text-dark/75'
+                                className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'
                             >
                                 More about me
                             </h2>
@@ -65,10 +65,15 @@ const About = () => {
                                 I follow an agile approach, particularly SCRUM, to manage projects efficiently. With my technical skills, problem-solving abilities, and passion for creating great user experiences, I strive to exceed expectations and contribute to project success.
                             </p>
                         </div>
-                        <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'>
-                            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark'/>
+                        <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:border-light dark:bg-dark'>
+                            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light'/>
                             <Image src={profile} alt="Willians Jimenez"
-                                className="w-full h-auto rounded-2xl"
+                                className="w-full h-auto rounded-2xl" priority
+                                sizes="
+                                    (max-width: 768px) 100vw,
+                                    (max-width: 1200px) 50vw,
+                                    33vw
+                                "
                             />
                         </div>
                         <div className='col-span-2 flex flex-col items-end justify-between'>
@@ -77,7 +82,7 @@ const About = () => {
                                     <AnimatedNumbers value={7}/>+
                                 </span>
                                 <h2
-                                    className='text-xl font-medium capitalize text-dark/75'
+                                    className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'
                                 >
                                     Learned technologies
                                 </h2>
@@ -87,7 +92,7 @@ const About = () => {
                                     <AnimatedNumbers value={5}/>+
                                 </span>
                                 <h2
-                                    className='text-xl font-medium capitalize text-dark/75'
+                                    className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'
                                 >
                                     Projects completed
                                 </h2>

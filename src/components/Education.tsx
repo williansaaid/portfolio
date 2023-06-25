@@ -25,7 +25,7 @@ const Education = () => {
                         style={{
                             scaleY: scrollYProgress
                         }}
-                        className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'
+                        className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'
                     />
                     <ul className='w-full flex flex-col items-center justify-between ml-4'>
                         <EducationDetails

@@ -1,14 +1,18 @@
 "use client"
 import React from 'react'
 import CustomLink from './CustomLink'
-import { GithubIcon, LinkedInIcon } from './Icons'
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons'
 import Logo from './Logo'
 import { motion } from "framer-motion"
+import useThemeSwitcher from '@/hooks/useThemeSwitcher'
 
 const NavBar = () => {
+
+    const [mode, setMode] = useThemeSwitcher();
+
     return (
         <header
-            className='w-full px-32 py-8 font-medium flex items-center justify-between'
+            className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light'
         >
             <nav className='flex gap-8'>
                 <CustomLink href='/' title='Home'/>
@@ -34,6 +38,17 @@ const NavBar = () => {
                 >
                     <LinkedInIcon/>
                 </motion.a>
+
+                <button
+                    onClick={() => setMode( mode === "light" ? "dark" : "light")}
+                    className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+                >
+                    {
+                        mode === "dark" ?
+                        <SunIcon className='fill-dark'/> :
+                        <MoonIcon className='fill-dark'/>
+                    }
+                </button>
             </nav>
             <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
                 <Logo/>
