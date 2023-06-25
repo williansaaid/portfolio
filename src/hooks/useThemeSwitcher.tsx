@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const useThemeSwitcher = () => {
 
@@ -51,7 +51,7 @@ const useThemeSwitcher = () => {
         }
     }, [mode])
 
-    return [mode, setMode]
+    return [mode, setMode] as const
 }
 
 export default useThemeSwitcher
