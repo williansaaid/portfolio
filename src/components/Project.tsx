@@ -6,7 +6,7 @@ import { GithubIcon } from './Icons'
 interface Props {
     type: string,
     title: string,
-    img: StaticImageData,
+    img: any,
     link: string,
     github: string
 }
