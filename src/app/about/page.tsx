@@ -11,7 +11,7 @@ import React, { useEffect, useRef } from 'react'
 import profile from "../../../public/images/profile2.jpg"
 
 const AnimatedNumbers = ({ value }: any) => {
-    const ref = useRef(null);
+    const ref = useRef<HTMLSpanElement>(null);
     const motionValue = useMotionValue(0);
     const springValue = useSpring(motionValue, { duration: 3000 });
     const isInView = useInView(ref, {once: true})
@@ -72,7 +72,7 @@ const About = () => {
                                 sizes="
                                     (max-width: 768px) 100vw,
                                     (max-width: 1200px) 50vw,
-                                    33vw
+                                    50vw
                                 "
                             />
                         </div>
