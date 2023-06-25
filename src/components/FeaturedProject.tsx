@@ -7,7 +7,7 @@ interface Props {
     type: string,
     title: string,
     summary: string,
-    img: StaticImageData,
+    img: any,
     link: string,
     github: string
 }
