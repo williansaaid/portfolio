@@ -56,10 +56,10 @@ const About = () => {
                                 More about me
                             </h2>
                             <p className='font-medium'>
-                                I'm a Full Stack Developer with a focus on front-end development. I have experience in PERN Stack, Typescript, React Native, MongoDB, and more. I bring creative thinking, problem-solving autonomy, and effective communication to boost individual and teamwork performance.
+                                I&apos;m a Full Stack Developer with a focus on front-end development. I have experience in PERN Stack, Typescript, React Native, MongoDB, and more. I bring creative thinking, problem-solving autonomy, and effective communication to boost individual and teamwork performance.
                             </p>
                             <p className='font-medium'>
-                                I have a broad range of skills in various technologies including Typescript, React, React Native, Next.js, Redux, Node.js, Express, PostgreSQL, MongoDB, and more. I'm also proficient in front-end styling with TailwindCSS and StyledComponents. My expertise covers both front-end and back-end development.
+                                I have a broad range of skills in various technologies including Typescript, React, React Native, Next.js, Redux, Node.js, Express, PostgreSQL, MongoDB, and more. I&apos;m also proficient in front-end styling with TailwindCSS and StyledComponents. My expertise covers both front-end and back-end development.
                             </p>
                             <p className='font-medium'>
                                 I follow an agile approach, particularly SCRUM, to manage projects efficiently. With my technical skills, problem-solving abilities, and passion for creating great user experiences, I strive to exceed expectations and contribute to project success.
