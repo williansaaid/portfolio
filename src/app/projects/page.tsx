@@ -4,7 +4,11 @@ import Layout from '@/components/Layout';
 import Project from '@/components/Project';
 import Head from 'next/head';
 import React from 'react';
-import featuredPjtImg from '../../../public/images/projects-dark-desktop.png'
+import dondeSuena from '../../../public/images/dondeSuena.jpg';
+import dondeSuena2 from '../../../public/images/dondeSuena2.jpg';
+import ponder from '../../../public/images/ponder.jpg';
+import pokemon from '../../../public/images/pokemonProject.jpeg';
+import ups from '../../../public/images/ups.jpg';
 
 const Projects = () => {
     return (
@@ -25,48 +29,48 @@ const Projects = () => {
                     <div className='grid grid-cols-12 gap-24 gap-y-32'>
                         <div className='col-span-12'>
                             <FeaturedProject
-                                title='Github Clone'
-                                type='Featured Project'
-                                img={featuredPjtImg}
-                                link='/'
-                                github='/'
-                                summary='Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vitae, nemo optio fuga necessitatibus veritatis iste tempore aliquid, consequuntur eum ullam! Eius quia amet id minima repellat nostrum odit inventore!'
+                                title='Delivery Tracking App'
+                                type='Featured Mobile Project'
+                                img={ups}
+                                link='https://github.com/williansaaid/DeliveryTrackingApp'
+                                github='https://github.com/williansaaid/DeliveryTrackingApp'
+                                summary='I developed a UPS delivery tracking app clone using React Native, integrating a GraphQL backend with Firebase using StepZen. The app included robust TypeScript code, seamless navigation with React Native Navigation, and styling with Tailwind CSS. React Native Elements enhanced the app design, while custom React Hooks were implemented for reusable functionality. This project provided valuable experience in backend integration, TypeScript usage, navigation implementation, styling, and improved design.'
                             />
                         </div>
                         <div className='col-span-6'>
                             <Project
-                                title='Github Clone'
+                                title='Events Marketplace'
                                 type='Web Project'
-                                img={featuredPjtImg}
-                                link='/'
-                                github='/'
+                                img={dondeSuena}
+                                link='https://donde-suena.vercel.app/'
+                                github='https://github.com/williansaaid/donde-suena-frontend'
                             />
                         </div>
                         <div className='col-span-6'>
                             <Project
-                                title='Github Clone'
+                                title='Ponder Landing Page'
                                 type='Web Project'
-                                img={featuredPjtImg}
-                                link='/'
-                                github='/'
+                                img={ponder}
+                                link='https://ponder-beta.vercel.app'
+                                github='https://github.com/LuisLeonPardo/Ponder'
                             />
                         </div>
                         <div className='col-span-6'>
                             <Project
-                                title='Github Clone'
+                                title='Pokemon Website'
                                 type='Web Project'
-                                img={featuredPjtImg}
-                                link='/'
-                                github='/'
+                                img={pokemon}
+                                link='https://pi-pokemon-williansaaid.vercel.app/'
+                                github='https://github.com/williansaaid/PI-Pokemon'
                             />
                         </div>
                         <div className='col-span-6'>
                             <Project
-                                title='Github Clone'
-                                type='Web Project'
-                                img={featuredPjtImg}
-                                link='/'
-                                github='/'
+                                title='Backend for Events Marketplace'
+                                type='Backend Project'
+                                img={dondeSuena2}
+                                link='https://github.com/tomychi/DondeSuena-backend'
+                                github='https://github.com/tomychi/DondeSuena-backend'
                             />
                         </div>
                     </div>
