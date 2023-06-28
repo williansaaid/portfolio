@@ -13,7 +13,7 @@ const quote = {
     },
     animate: {
         transition: {
-            delay: 0.5,
+            delayChildren: 1,
             staggerChildren: 0.1
         }
     }
@@ -27,6 +27,7 @@ const singleWord = {
         opacity: 1,
         y: 0,
         transition: {
+            delayChildren: 1,
             duration: 1,
         }
     }
@@ -45,7 +46,7 @@ const AnimatedText = ({text, className=""}: Props) => {
                     text.split(" ").map((word, index) =>
                         <motion.span
                             key={index}
-                            className="inline-block"
+                            className="inline-block hover:text-primary dark:hover:text-primaryDark duration-500 cursor-default"
                             variants={singleWord}
                         >
                             {word}&nbsp;

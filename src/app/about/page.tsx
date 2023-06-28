@@ -4,7 +4,7 @@ import Education from '@/components/Education'
 import Experience from '@/components/Experience'
 import Layout from '@/components/Layout'
 import Skills from '@/components/Skills'
-import { useInView, useMotionValue, useSpring } from 'framer-motion'
+import { useInView, useMotionValue, useSpring, motion } from 'framer-motion'
 import Head from 'next/head'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
@@ -49,9 +49,9 @@ const About = () => {
                         className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center mb-8 md:mb-16'
                     />
                     <div
-                        className='grid w-full grid-cols-8 gap-8 md:gap-12'
+                        className='grid w-full grid-cols-8 gap-16 md:gap-12'
                     >
-                        <div className='order-2 md:order-1 col-span-8 md:col-span-4 xl:col-span-3 flex flex-col items-start justify-start gap-2'>
+                        <div className='order-2 md:order-1 col-span-8 md:col-span-4 xl:col-span-3 flex flex-col items-start justify-start gap-6'>
                             <h2
                                 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'
                             >
@@ -68,9 +68,16 @@ const About = () => {
                             </p>
                         </div>
                         <div className='order-1 md:order-2 col-span-8 md:col-span-4 xl:col-span-3 relative w-[75%] mx-auto md:h-max md:w-full rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:border-light dark:bg-dark'>
-                            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light'/>
+                            <motion.div
+                                className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light'
+
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1}}
+                                transition={{delay: 1, duration: 1, ease:"easeInOut"}}
+                            />
                             <Image src={profile} alt="Willians Jimenez"
                                 className="w-auto h-full rounded-2xl" priority
+                                draggable={false}
                                 sizes="
                                     (max-width: 768px) 100vw,
                                     (max-width: 1200px) 50vw,
@@ -79,8 +86,8 @@ const About = () => {
                             />
                         </div>
                         <div className='order-3 col-span-8 xl:col-span-2 flex flex-row xl:flex-col items-end justify-between'>
-                            <div className='flex flex-col items-center xl:items-end justify-center'>
-                                <span className='inline-block text-5xl md:text-6xl xl:text-7xl font-bold'>
+                            <div className='flex flex-col items-center xl:items-end justify-center cursor-default'>
+                                <span className='inline-block text-5xl md:text-6xl xl:text-7xl font-bold hover:text-primary dark:hover:text-primaryDark duration-500'>
                                     <AnimatedNumbers value={7}/>+
                                 </span>
                                 <h2
@@ -89,8 +96,8 @@ const About = () => {
                                     Learned technologies
                                 </h2>
                             </div>
-                            <div className='flex flex-col items-center xl:items-end justify-center'>
-                                <span className='inline-block text-5xl md:text-6xl xl:text-7xl font-bold'>
+                            <div className='flex flex-col items-center xl:items-end justify-center cursor-default'>
+                                <span className='inline-block text-5xl md:text-6xl xl:text-7xl font-bold hover:text-primary dark:hover:text-primaryDark duration-500'>
                                     <AnimatedNumbers value={5}/>+
                                 </span>
                                 <h2
@@ -99,8 +106,8 @@ const About = () => {
                                     Satisfied Clients
                                 </h2>
                             </div>
-                            <div className='flex flex-col items-center xl:items-end justify-center'>
-                                <span className='inline-block text-5xl md:text-6xl xl:text-7xl font-bold'>
+                            <div className='flex flex-col items-center xl:items-end justify-center cursor-default'>
+                                <span className='inline-block text-5xl md:text-6xl xl:text-7xl font-bold hover:text-primary dark:hover:text-primaryDark duration-500'>
                                     <AnimatedNumbers value={5}/>+
                                 </span>
                                 <h2

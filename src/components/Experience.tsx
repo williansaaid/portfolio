@@ -25,6 +25,12 @@ const Experience = () => {
                         style={{
                             scaleY: scrollYProgress
                         }}
+                        className='absolute inset-0 left-[20px] top-0 w-[2px] h-full origin-top dark:bg-primaryDark md:w-[4px] xs:left-[30px] md:left-9 rounded-lg blur'
+                    />
+                    <motion.div
+                        style={{
+                            scaleY: scrollYProgress
+                        }}
                         className='absolute left-[20px] top-0 w-[2px] h-full bg-dark origin-top dark:bg-primaryDark md:w-[4px] xs:left-[30px] md:left-9'
                     />
                     <ul className='w-full flex flex-col items-center justify-between ml-2 xs:ml-4'>

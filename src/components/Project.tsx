@@ -18,7 +18,8 @@ const Project = ({ type, title, img, link, github }: Props) => {
             <Link href={link} target='_blank'
                 className='w-full cursor-pointer overflow-hidden rounded-lg'
             >
-                <Image src={img} alt={title} className='w-full h-auto object-cover'/>
+                <Image src={img} alt={title} className='w-full h-auto object-cover'
+                draggable={false}/>
             </Link>
             <div className='w-full flex flex-col items-start justify-between mt-4'>
                 <span className='text-primary dark:text-primaryDark font-medium text-base xs:text-xl'>
