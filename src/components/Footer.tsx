@@ -5,7 +5,7 @@ import Layout from './Layout'
 const Footer = () => {
     return (
         <footer className='w-11/12 border-t-2 border-solid border-dark font-medium text-lg dark:border-light'>
-            <Layout className="py-8 flex items-center justify-between dark:text-light">
+            <Layout className="py-8 flex flex-col items-center justify-between dark:text-light sm:flex-row gap-4 text-center">
                 <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
                 <div>
                     Build with &#9825; by Willians Jimenez

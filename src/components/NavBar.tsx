@@ -20,14 +20,16 @@ const NavBar = () => {
         <header
             className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative'
         >
-            <button
-                className='flex lg:hidden flex-col justify-center items-center'
-                onClick={handleClick}
-            >
-                <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm duration-300 ease-in-out ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"}`}></span>
-                <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm my-0.5 duration-300 ease-in-out ${isOpen ? "opacity-0" : "opacity-100"}`}></span>
-                <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm duration-300 ease-in-out ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"}`}></span>
-            </button>
+            <div className='absolute top-10 left-16'>
+                <button
+                    className='flex lg:hidden flex-col justify-center items-center'
+                    onClick={handleClick}
+                >
+                    <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm duration-300 ease-in-out ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"}`}></span>
+                    <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm my-0.5 duration-300 ease-in-out ${isOpen ? "opacity-0" : "opacity-100"}`}></span>
+                    <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm duration-300 ease-in-out ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"}`}></span>
+                </button>
+            </div>
 
             <div className='w-full hidden justify-between items-center lg:flex'>
                 <nav className='flex gap-8'>
