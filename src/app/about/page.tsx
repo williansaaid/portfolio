@@ -49,9 +49,9 @@ const About = () => {
                         className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center mb-8 md:mb-16'
                     />
                     <div
-                        className='grid w-full grid-cols-8 gap-16 md:gap-12'
+                        className='grid w-full grid-cols-8 gap-8 sm:gap-12 md:gap-12'
                     >
-                        <div className='order-2 md:order-1 col-span-8 md:col-span-4 xl:col-span-3 flex flex-col items-start justify-start gap-6'>
+                        <div className='order-2 md:order-1 col-span-8 md:col-span-4 xl:col-span-3 flex flex-col items-center xs:items-start justify-start gap-6 text-center xs:text-left'>
                             <h2
                                 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'
                             >

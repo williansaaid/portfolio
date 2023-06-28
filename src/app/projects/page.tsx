@@ -58,7 +58,7 @@ const Projects = () => {
                             transition={{ delay: 0.7, duration: 0.8, ease: "easeInOut" }}
                             variants={{
                             visible: { opacity: 1, x: 0 },
-                            hidden: { opacity: 0, x: -500 }
+                            hidden: { opacity: 0, x: -50 }
                             }}
                             className='col-span-12 sm:col-span-6 pt-10'
                         >
@@ -77,7 +77,7 @@ const Projects = () => {
                             transition={{ delay: 0.5, duration: 0.8, ease: "easeInOut" }}
                             variants={{
                             visible: { opacity: 1, x: 0 },
-                            hidden: { opacity: 0, x: 500 }
+                            hidden: { opacity: 0, x: 50 }
                             }}
                             className='col-span-12 sm:col-span-6 pt-10'
                         >
@@ -96,7 +96,7 @@ const Projects = () => {
                             transition={{delay: 0.7, duration: 0.8, ease: "easeInOut" }}
                             variants={{
                             visible: { opacity: 1, x: 0 },
-                            hidden: { opacity: 0, x: -500 }
+                            hidden: { opacity: 0, x: -50 }
                             }}
                             className='col-span-12 sm:col-span-6 pt-10'
                         >
@@ -115,7 +115,7 @@ const Projects = () => {
                             transition={{ delay: 0.5, duration: 0.8, ease: "easeInOut" }}
                             variants={{
                             visible: { opacity: 1, x: 0 },
-                            hidden: { opacity: 0, x: 500 }
+                            hidden: { opacity: 0, x: 50 }
                             }}
                             className='col-span-12 sm:col-span-6 pt-10'
                         >
