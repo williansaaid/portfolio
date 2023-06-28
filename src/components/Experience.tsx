@@ -14,20 +14,20 @@ const Experience = () => {
     return (
         <>
             <div className='my-64'>
-                <h2 className='font-bold text-8xl mb-32 w-full text-center'>
+                <h2 className='font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-32 w-full text-center'>
                     Experience
                 </h2>
                 <div
                     ref={ref}
-                    className='w-[75%] mx-auto relative'
+                    className='w-full md:w-[90%] lg:w-[75%] mx-auto relative'
                 >
                     <motion.div
                         style={{
                             scaleY: scrollYProgress
                         }}
-                        className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light'
+                        className='absolute left-[20px] top-0 w-[2px] h-full bg-dark origin-top dark:bg-primaryDark md:w-[4px] xs:left-[30px] md:left-9'
                     />
-                    <ul className='w-full flex flex-col items-center justify-between ml-4'>
+                    <ul className='w-full flex flex-col items-center justify-between ml-2 xs:ml-4'>
                         <Details
                             position='Full Stack Developer'
                             company='Henry'

@@ -9,7 +9,7 @@ interface Props {
 
 const Skill = ({ name, x, y }: Props) => {
     return (
-        <motion.div className='flex items-center justify-center rounded-full font-semibold bg-dark dark:bg-light dark:text-dark text-light shadow-dark py-3 px-6 cursor-pointer absolute'
+        <motion.div className='flex items-center justify-center rounded-full font-semibold sm:bg-dark sm:dark:bg-light sm:dark:text-dark sm:text-light shadow-dark py-1.5 px-3 md:py-2 md:px-4 lg:py-3 lg:px-6 cursor-pointer absolute text-sm md:text-md lg:text-lg bg-transparent dark:bg-transparent text-dark dark:text-light'
             whileHover={{
                 scale: 1.1
             }}

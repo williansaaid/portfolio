@@ -16,7 +16,7 @@ const EducationDetails = ({ type, time, place, info }: Props) => {
     return (
         <li
             ref={ref}
-            className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col'
+            className='my-8 first:mt-0 last:mb-0 w-[80%] md:w-[60%] mx-auto flex flex-col justify-between'
         >
             <LiIcon reference={ref}/>
             <motion.div
@@ -32,14 +32,14 @@ const EducationDetails = ({ type, time, place, info }: Props) => {
                 }}
             >
                 <h3
-                    className='capitalize font-bold text-2xl'
+                    className='capitalize font-bold text-lg xs:text-xl sm:text-2xl'
                 >
                     {type}&nbsp;
                 </h3>
-                <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75 text-sm sm:text-lg'>
                     {time} | {place}
                 </span>
-                <p className='font-medium w-full'>
+                <p className='font-medium w-full text-sm md:text-lg'>
                     {info}
                 </p>
             </motion.div>

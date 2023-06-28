@@ -10,7 +10,7 @@ const monserrat = Montserrat({
 })
 
 export const metadata = {
-  title: 'Willians Jimenez',
+  title: 'Willians Dev',
   description: "Willians Jimenez' portfolio",
 }
 
@@ -19,6 +19,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <body
@@ -32,7 +33,7 @@ export default function RootLayout({
           }
         `}</Script>
         <NavBar/>
-        {children}
+          {children}
         <Footer/>
       </body>
     </html>
