@@ -6,7 +6,7 @@ import Project from '@/components/Project';
 import Head from 'next/head';
 import React from 'react';
 import dondeSuena from '../../../public/images/dondeSuena.jpg';
-import dondeSuena2 from '../../../public/images/dondeSuena2.jpg';
+import messenger from '../../../public/images/Messenger-clone.jpg'
 import ponder from '../../../public/images/ponder.jpg';
 import pokemon from '../../../public/images/pokemonProject.jpeg';
 import ups from '../../../public/images/ups.jpg';
@@ -43,12 +43,12 @@ const Projects = () => {
                             className='col-span-12'
                         >
                             <FeaturedProject
-                                title='Delivery Tracking App'
-                                type='Featured Mobile Project'
-                                img={ups}
-                                link='https://github.com/williansaaid/DeliveryTrackingApp'
-                                github='https://github.com/williansaaid/DeliveryTrackingApp'
-                                summary='I developed a UPS delivery tracking app clone using React Native, integrating a GraphQL backend with Firebase using StepZen. The app included robust TypeScript code, seamless navigation with React Native Navigation, and styling with Tailwind CSS. React Native Elements enhanced the app design, while custom React Hooks were implemented for reusable functionality. This project provided valuable experience in backend integration, TypeScript usage, navigation implementation, styling, and improved design.'
+                                title='Messenger Clone'
+                                type='Featured Web Project'
+                                img={messenger}
+                                link='https://messenger-clone-ten-xi.vercel.app/'
+                                github='https://github.com/williansaaid/messenger-clone'
+                                summary='I developed a Messenger Clone using Next 13, MongoDB, PrismaORM, Pusher and NextAuth. The app included robust TypeScript code, and real time chat that was accomplished using Pusher, the styling was made using Tailwind CSS. The realization of this project provided valuable experience in backend integration, TypeScript usage, styling, and authentication work.'
                             />
                         </motion.div>
                         <motion.div
@@ -120,11 +120,11 @@ const Projects = () => {
                             className='col-span-12 sm:col-span-6 pt-10'
                         >
                             <Project
-                                title='Backend for Events Marketplace'
-                                type='Backend Project'
-                                img={dondeSuena2}
-                                link='https://github.com/tomychi/DondeSuena-backend'
-                                github='https://github.com/tomychi/DondeSuena-backend'
+                                title='Delivery Tracking App'
+                                type='Mobile Project'
+                                img={ups}
+                                link='https://github.com/williansaaid/DeliveryTrackingApp'
+                                github='https://github.com/williansaaid/DeliveryTrackingApp'
                             />
                         </motion.div>
                     </div>
