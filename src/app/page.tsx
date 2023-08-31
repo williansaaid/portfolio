@@ -6,7 +6,7 @@ import HireMe from "@/components/HireMe"
 import { LinkArrow } from "@/components/Icons"
 import Layout from "@/components/Layout"
 import Image from "next/image"
-import devPic from "../../public/images/devPic.png"
+import devPic from "../../public/images/profile.jpg"
 import TransitionEffect from "@/components/TransitionEffect"
 import { motion } from 'framer-motion';
 
@@ -22,14 +22,14 @@ export default function Home() {
         <Layout className="">
           <div className="flex flex-col md:flex-row items-center justify-between w-full pb-12">
             <motion.div
-              className="w-1/2"
+              className="w-1/2 p-0 sm:p-8 lg:p-16 py-6"
               initial={{opacity: 0}}
               animate={{opacity: 1}}
               transition={{delay: 1, duration: 1, ease:"easeInOut"}}
             >
               <Image src={devPic}
                 alt="Willians Jimenez"
-                className="w-full h-auto select-none" priority
+                className="w-full h-auto select-none rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl" priority
                 draggable={false}
                 sizes="
                   (max-width: 768px) 100vw,
